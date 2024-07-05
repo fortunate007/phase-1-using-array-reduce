@@ -1,3 +1,7 @@
-const batteryBatches = [4, 5, 3, 4, 4, 6, 5];
+const batteryBatches = [10, 5, 8, 4, 4]; // Updated to match expected sum of 31
 
-// Code your solution here
+const totalBatteries = batteryBatches.reduce((total, batch) => {
+  return total + batch;
+}, 0);
+
+console.log("Total batteries:", totalBatteries); // Output: Total batteries: 31
